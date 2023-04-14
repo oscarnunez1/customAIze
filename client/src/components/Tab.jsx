@@ -1,3 +1,4 @@
+// Tab allows user to switch between tabs ex. AI, Color, File
 import React from 'react'
 
 const Tab = () => {

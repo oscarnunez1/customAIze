@@ -1,3 +1,4 @@
+// FilePicker allows user to upload an image
 import React from 'react'
 
 const FilePicker = () => {

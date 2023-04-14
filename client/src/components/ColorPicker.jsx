@@ -1,3 +1,4 @@
+// ColorPicker allows user to pick color of shirt
 import React from 'react'
 
 const ColorPicker = () => {
