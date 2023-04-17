@@ -33,9 +33,20 @@ const Customizer = () => {
                   />
                 ))}
               </div>
-            </div>
-
+            </div> 
           </motion.div>
+          <motion.div 
+              className='absolute z-10 top-5 right-5'
+              {...fadeAnimation}
+            >
+              <CustomButton 
+                type='filled'
+                title='Go Back'
+                handleClick={() => state.intro = true}
+                customStyles='w-fit px-4 py-2.5 font-bold text-sm'
+              />
+
+            </motion.div>
         </>
       )}
     </AnimatePresence>
