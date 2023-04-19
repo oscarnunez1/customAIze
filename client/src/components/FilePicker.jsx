@@ -8,7 +8,7 @@ const FilePicker = ({ file, setFile, readFile }) => {
     <div className='filepicker-container'>
       <div className='flex-1 flex flex-col'>
         <input 
-          id='file-ipload'
+          id='file-upload'
           type='file'
           accept='image/*'
           onChange={(e) => setFile(e.target.files[0])}
@@ -25,13 +25,13 @@ const FilePicker = ({ file, setFile, readFile }) => {
       <div className='mt-4 flex flex-wrap gap-3'>
         <CustomButton 
           type='outline'
-          title='logo'
+          title='Logo'
           handleClick={() => readFile('logo')}
           customStyles='text-xs'
         />
         <CustomButton 
           type='filled'
-          title='full'
+          title='Full'
           handleClick={() => readFile('full')}
           customStyles='text-xs'
         />
