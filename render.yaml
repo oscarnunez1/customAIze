@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: customAIze
+    repo: https://github.com/oscarnunez1/customAIze
+    branch: main
+    env: node
+    build:
+      node: 14.20.1
+      command: npm
+    start: your-start-command
