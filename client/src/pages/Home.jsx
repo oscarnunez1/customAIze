@@ -31,7 +31,7 @@ const Home = () => {
           <motion.div className='home-content' {...headContainerAnimation}>
             <motion.div {...headTextAnimation}>
               <h1 className='head-text'>
-                LET'S <br className='xl:block hidden' /> DO IT.
+                Custom<span style={{ color: "#00A67E" }}>AI</span>ze
               </h1>
             </motion.div>
             <motion.div
@@ -39,7 +39,7 @@ const Home = () => {
               className='flex flex-col gap-5'
             >
               <p className='max-w-md font-normal text-gray-600 text-base'>
-                Create your unique and exclusive shirt with our brand-new 3D customization tool. <strong>Unleash your imagination</strong>{" "} and define your own style.
+                Design your one-of-a-kind, tailor-made shirt using our cutting-edge 3D personalization feature. <strong>Let your creativity run wild</strong>{" "} and establish your distinct fashion sense.
               </p>
 
               <CustomButton 
