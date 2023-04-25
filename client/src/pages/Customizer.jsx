@@ -52,7 +52,7 @@ const Customizer = () => {
     try {
       setGeneratingImg(true)
 
-      const response = await fetch('https://customaize.onrender.com/', {
+      const response = await fetch('https://customaize.onrender.com/api/v1/dalle', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -63,6 +63,7 @@ const Customizer = () => {
       })
 
       const data = await response.json()
+      console.log(data);
 
       handleDecals(type, `data:image/png;base64,${data.photo}`)
     } catch (error) {
