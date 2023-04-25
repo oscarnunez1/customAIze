@@ -11,7 +11,6 @@ const config = new Configuration({
 })
 
 const openai = new OpenAIApi(config)
-console.log("IMAGE", openai);
 
 router.route('/').get((req, res) => {
   res.status(200).json({  message: "Hello from DALL.E ROUTES"})
